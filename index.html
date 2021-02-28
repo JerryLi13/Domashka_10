@@ -18,7 +18,7 @@
 				<nav class="header__menu">
 					<ul class="header__list">
 						<li>
-							<a class="header__link" href="#">фильмы</a>
+							<a tabindex="1" class="header__link" href="#">фильмы</a>
 							<ul class="header__sub-list">
 								<li>
 									<a class="header__sub-link" href="#">Все жанры</a>
@@ -56,7 +56,7 @@
 							</ul>
 						</li>
 						<li>
-							<a class="header__link" href="#">клипы</a>
+							<a tabindex="2" class="header__link" href="#">клипы</a>
 							<ul class="header__sub-list">
 								<li>
 									<a class="header__sub-link" href="#">Все жанры</a>
@@ -79,7 +79,7 @@
 							</ul>
 						</li>
 						<li>
-							<a class="header__link" href="#">Музыка</a>
+							<a tabindex="3" class="header__link" href="#">Музыка</a>
 							<ul class="header__sub-list">
 								<li>
 									<a class="header__sub-link" href="#">Все жанры</a>
@@ -117,14 +117,14 @@
 					<form class="form__body" action="#">
 						<div class="form__element">
 							<div class="form__input">
-								<input class="input" type="email" name="email" placeholder="Почта*">
+								<input tabindex="4" class="input" type="email" name="email" placeholder="Почта*">
 							</div>
 						</div>
 						<div class="form__element_back">
 							<a class="form__back" href="#">Вернуться в форму авторизации</a>
 						</div>
 						<div class="form__element">
-							<button class="form__btn btn" type="submit">Отправить</button>
+							<button tabindex="5" class="form__btn btn" type="submit">Отправить</button>
 						</div>
 						<div class="form__element">
 							<div class="form__info">
@@ -151,18 +151,18 @@
 						<div class="text">Присоединиться:</div>
 					</div>
 					<div class="footer__social-network">
-						<a class="footer__link" href="#"><img src="img/twitter.png" alt="twitter"></a>
-						<a class="footer__link" href="#"><img src="img/vk.png" alt="vk"></a>
-						<a class="footer__link" href="#"><img src="img/facebook.png" alt="facebook"></a>
-						<a class="footer__link" href="#"><img src="img/instagram.png" alt="instagram"></a>
-						<a class="footer__link" href="#"><img src="img/youtube.png" alt="youtube"></a>
-						<a class="footer__link" href="#"><img src="img/odnoklassniki.png" alt="odnoklassniki"></a>
+						<a tabindex="6" class="footer__link" href="#"><img src="img/twitter.png" alt="twitter"></a>
+						<a tabindex="6" class="footer__link" href="#"><img src="img/vk.png" alt="vk"></a>
+						<a tabindex="6" class="footer__link" href="#"><img src="img/facebook.png" alt="facebook"></a>
+						<a tabindex="6" class="footer__link" href="#"><img src="img/instagram.png" alt="instagram"></a>
+						<a tabindex="6" class="footer__link" href="#"><img src="img/youtube.png" alt="youtube"></a>
+						<a tabindex="6" class="footer__link" href="#"><img src="img/odnoklassniki.png" alt="odnoklassniki"></a>
 					</div>
 					<div class="footer__contacts-info">
-						<a class="footer__info info" href="#">О нас</a>
-						<a class="footer__info info" href="#">Вопросы и ответы</a>
-						<a class="footer__info info" href="tel:+38-067-982-81-22">+38-067-982-81-22</a>
-						<a class="footer__info info" href="mailto:uzbeklarnet@gmail.com">uzbeklarnet@gmail.com</a>
+						<a tabindex="7" class="footer__info info" href="#">О нас</a>
+						<a tabindex="7" class="footer__info info" href="#">Вопросы и ответы</a>
+						<a tabindex="7" class="footer__info info" href="tel:+38-067-982-81-22">+38-067-982-81-22</a>
+						<a tabindex="7" class="footer__info info" href="mailto:uzbeklarnet@gmail.com">uzbeklarnet@gmail.com</a>
 					</div>
 				</div>
 			</div>
@@ -260,33 +260,33 @@
 						<form class="form__body" action="#">
 							<div class="form__element"> <!-- TEXT -->
 								<div class="form__input">
-									<input class="input" type="text" name="name" placeholder="Имя*">
+									<input required class="input" type="text" name="name" placeholder="Имя*">
 								</div>
 							</div>
 							<div class="form__element">
 								<div class="form__input">
-									<input class="input" type="text" name="surname" placeholder="Фамилия*">
+									<input required class="input" type="text" name="surname" placeholder="Фамилия*">
 								</div>
 							</div>
 							<div class="form__element">
 								<div class="form__input">
-									<input class="input" minlength="5" maxlength="10" type="text" name="surname" placeholder="Логин*">
+									<input required class="input" minlength="5" maxlength="10" type="text" name="surname" placeholder="Логин*">
 								</div>
 							</div>
 							<div class="form__element"> <!-- EMAIL -->
 								<div class="form__input">
-									<input class="input" type="email" name="email" placeholder="Почта*">
+									<input required class="input" type="email" name="email" placeholder="Почта*">
 								</div>
 							</div>
 							<div class="form__element"> <!-- PASSWORD -->
 								<div class="form__input password">
-									<input class="input" type="password" name="password" placeholder="Пароль*">
+									<input required class="input" type="password" name="password" placeholder="Пароль*">
 								</div>
 							</div>
 							<div class="form__line"> <!-- RADIO -->
 								<div class="form__input input-radio">
 									<div class="radio">
-										<input class="radio__input" type="radio" value="good" name="sex" id="men">
+										<input checked class="radio__input" type="radio" value="good" name="sex" id="men">
 										<label class="radio__label" for="men">Мужчина</label>
 									</div>
 									<div class="radio">
