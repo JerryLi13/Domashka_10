@@ -1,0 +1,554 @@
+/* ШРИФТЫ */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*ОБНУЛЯЮЩИЙ СТИЛь*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+/*ДОМАШНЯЯ РАБОТА №9*/
+body {
+	width: 100%;
+	font-family: "Gilroy";
+	line-height: 1;
+	background-color: #111428;
+	color: white;
+}
+/*==================== HEADER LIST ====================*/
+.header {
+	width: 100%;
+	min-height: 100px;
+	background: #111428;
+	box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+	position: fixed;
+	z-index: 10;
+}
+.header__container {
+	max-width: 1216px;
+	width: 100%;
+	height: 88px;
+	margin: 0 auto;
+	padding: 15px 0px 0px 0px;
+}
+/* -------------header logo-------------- */
+
+.header__logos {
+	display: inline-block;
+	margin: 0px 56px 0px 0px;
+}
+.header__logo {
+	width: 162px;
+	height: 29px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+/* -------------header menu-------------- */
+.header__menu {
+	display: inline-block;
+	margin-bottom: 38px;
+}
+.header__list {
+	font-size: 0;
+}
+.header__list > li {
+	position: relative;
+	display: inline-block;
+	margin: 0px 28px 0px 0px;
+}
+.header__list > li::after {
+	content: "";
+	position: relative;
+	top: 3px;
+	right: -6px;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url("../img/arrows.png") 0px 0px no-repeat;
+}
+.header__list > li:last-child {
+	margin-right: 0px;
+}
+.header__list > li:hover .header__sub-list {
+	display: inline-block;
+}
+.header__link {
+	width: 69px;
+	height: 22px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+.header__sub-list {
+	width: 170px;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	background: #337ab7;
+	border-radius: 5px;
+	padding: 15px;
+}
+.header__sub-list > li {
+	display: inline-block;
+	margin-bottom: 9px;
+	width: 140px;
+	height: 25px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.header__sub-list > li:hover {
+	background: #a6d6ff;
+}
+
+.header__sub-list > li:last-child {
+	margin-bottom: 0px;
+}
+
+.header__sub-link {
+	width: 83px;
+	height: 19px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ffffff;
+	padding: 0px 15px;
+}
+/*======================== FORM ========================*/
+.section {
+	padding-top: 147px;
+}
+.form {
+}
+.form__container {
+	max-width: 840px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.form__recovery-password {
+	min-width: 441px;
+}
+.form__hint-text p {
+	max-width: 163px;
+	width: 100%;
+	text-align: left;
+	font-weight: 500;
+	line-height: 16px;
+	color: #a3a3a3;
+}
+.form__title {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.title {
+	font-family: Gilroy;
+	max-width: 441px;
+	width: 100%;
+	height: 46px;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 46px;
+	color: #ffffff;
+}
+.form__sub-titlte {
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 60px;
+}
+.sub-titlte {
+	max-width: 385px;
+	width: 100%;
+	height: 19px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #64b369;
+}
+.form__body {
+}
+.form__element {
+	min-width: 441px;
+}
+.form__input {
+	margin: 0 auto;
+	margin-bottom: 28px;
+}
+.input {
+	padding-left: 20px;
+	max-width: 384px;
+	width: 100%;
+	height: 50px;
+	background: #ffffff;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #777777;
+}
+.form__element_back {
+	position: relative;
+	margin-bottom: 30px;
+}
+.form__back {
+	width: 246px;
+	height: 19px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ffffff;
+	margin: 0px 0px 0px -77px;
+}
+.form__back::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 228px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url("../img/arrow_left.png") 0 0 no-repeat;
+}
+/* =====Кнопка===== */
+.form__btn {
+	margin-bottom: 24px;
+}
+.btn {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #ffffff;
+	max-width: 384px;
+	width: 100%;
+	height: 50px;
+	left: 768px;
+	top: 409px;
+	background: #337ab7;
+	border-radius: 5px;
+}
+.form__info {
+	max-width: 311px;
+	width: 100%;
+	height: 38px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #aeaeae;
+	margin: 0 auto;
+	margin: 0px 0px 30px 226px;
+	text-align: left;
+}
+.form__footer {
+	margin: 0 auto;
+	text-align: left;
+}
+.form__text {
+	max-width: 171px;
+	width: 100%;
+	height: 21px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-left: 0px;
+	padding-left: 272px;
+}
+.form__link {
+	width: 109px;
+	height: 21px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #64b369;
+	padding-left: 5px;
+}
+
+/*======================== FOOTER ========================*/
+
+.footer__container {
+	max-width: 1216px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 203px;
+}
+.footer__contacts {
+}
+.footer__lines {
+	margin-bottom: 66px;
+}
+.footer_text {
+	position: relative;
+	top: 0px;
+	left: -11px;
+	margin-bottom: 22px;
+}
+.text {
+	width: 162px;
+	height: 24px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #ffffff;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer__line {
+	width: 1216px;
+	height: 1px;
+	background: #ffffff;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.footer__social-network {
+	margin-bottom: 58px;
+	font-size: 0;
+}
+.footer__link {
+	max-width: 40px;
+	width: 100%;
+	height: 40px;
+	margin-right: 40px;
+}
+.footer__link:last-child {
+	margin-right: 0px;
+}
+
+.footer__contacts-info {
+	font-size: 0;
+}
+.info {
+	width: 56px;
+	height: 24px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #ffffff;
+	margin: 0 auto;
+	margin-right: 20px;
+}
+.info:last-child {
+	margin-right: 0px;
+}
+
+/*======================== SUBSECTION ========================*/
+.subsection {
+	background: #e5e5e5;
+	max-width: 1920px;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 163px;
+}
+
+/*======================== SUBSECTION TWO ========================*/
+.password {
+	margin-bottom: 18px;
+}
+.title-section {
+	margin-bottom: 41px;
+}
+/* checkbox */
+.checkbox {
+	cursor: pointer;
+	max-width: 384px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+.checkbox__input {
+	/* скрываем оригинальный checkbox */
+	opacity: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkbox__label {
+	width: 137px;
+	height: 21px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	padding: 0px 0px 0px 30px;
+}
+.checkbox__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkbox__input:checked + .checkbox__label::after {
+	width: 12px;
+	height: 12px;
+	background: #337ab7;
+	border-radius: 5px;
+	position: absolute;
+	content: "";
+	top: 4px;
+	left: 4px;
+	z-index: 50;
+}
+.checkbox__text {
+	width: 141px;
+	height: 21px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #64b369;
+	padding-left: 72px;
+}
+.form__subtitle {
+	max-width: 384px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.text {
+	width: 110px;
+	height: 21px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+}
+.link2 {
+	margin-right: 30px;
+}
+
+.input-radio {
+	max-width: 384px;
+	text-align: left;
+}
+.radio {
+	cursor: pointer;
+	max-width: 384px;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	margin-right: 50px;
+}
+.radio__input {
+	opacity: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.radio__label {
+	width: 78px;
+	height: 21px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	padding: 0px 0px 0px 30px;
+}
+.radio__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.radio__input:checked + .radio__label::after {
+	width: 12px;
+	height: 12px;
+	background: #337ab7;
+	border-radius: 5px;
+	position: absolute;
+	content: "";
+	top: 4px;
+	left: 4px;
+	z-index: 50;
+}
